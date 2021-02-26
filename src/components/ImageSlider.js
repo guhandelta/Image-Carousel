@@ -1,10 +1,17 @@
+import { useState } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+// import { CarouselImages } from './CarouselImages';
 
-const ImageSlider = () => {
+const ImageSlider = ({CarouselImages}) => {
+    const [current, setCurrent] = useState(0);
+    const length = CarouselImages.length;
+
     return (
-        <div>
-            <h1>Image Slider</h1>
-        </div>
+        <section className="carousel">
+            <FaArrowAltCircleLeft className="left-arrow" />
+            <FaArrowAltCircleRight className="right-arrow" />
+            {CarouselImages.map((images, i)=> <img src={images.image} alt="Carousel Image"/>)}
+        </section>
     )
 }
 

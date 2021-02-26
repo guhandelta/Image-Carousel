@@ -1,10 +1,10 @@
-import { ImageSlider } from './components';
+import { ImageSlider, CarouselImages } from './components';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ImageSlider />
+      <ImageSlider CarouselImages={CarouselImages} />
     </div>
   );
 }
