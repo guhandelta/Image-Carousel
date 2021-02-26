@@ -1,4 +1,4 @@
-
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 const ImageSlider = () => {
     return (
